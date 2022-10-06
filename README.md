@@ -22,7 +22,7 @@ The code solves a scattering problem setting in 2D. The space domain is a triang
 * Another library that the program relies on is **CGAL** for mesh triangulation.
 
 * There is a separate domain generation script (__mesh_gen.cpp__). To launch it use the __input_mesh__ input file (pass it as a command line argument). The program works in parallel using **OpenMP**. Essentially, one can deside how much space is given to GPU-backed and CPU-backed processes. For example see image below:
-* 
+
 <p align="center" width="100%">
     <img width="80%" src="/mpi_domain.png?raw=true"> 
 </p>
