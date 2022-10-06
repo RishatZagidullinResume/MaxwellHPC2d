@@ -22,8 +22,10 @@ The code solves a scattering problem setting in 2D. The space domain is a triang
 * Another library that the program relies on is **CGAL** for mesh triangulation.
 
 * There is a separate domain generation script (__mesh_gen.cpp__). To launch it use the __input_mesh__ input file (pass it as a command line argument). The program works in parallel using **OpenMP**. Essentially, one can deside how much space is given to GPU-backed and CPU-backed processes. For example see image below:
-
-![mpi_domain.png](/mpi_domain.png)
+* 
+<p align="center" width="100%">
+    <img width="80%" src="/mpi_domain.png?raw=true"> 
+</p>
 
 GPU in general solves Maxwell equation faster, so it's reasonable to give it a bigger chunk of the computational domain. If you have free CPU processors, they can also do a bit of work. However keep in mind that data exchange between processes is an overhead. It will be cancelled out only for sufficiently big computational domains. In the example above we see that half of the computational domain is given to a single GPU-backed process while the other half is equally distributed among the four CPU-backed processes.
 
@@ -37,6 +39,8 @@ GPU in general solves Maxwell equation faster, so it's reasonable to give it a b
 
 * Below is an example of the numerical solution.
 
-![image.gif](/image.gif)
+<p align="center" width="100%">
+    <img width="80%" src="/image.gif?raw=true"> 
+</p>
 
 
