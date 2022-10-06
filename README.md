@@ -33,7 +33,7 @@ GPU in general solves Maxwell equation faster, so it's reasonable to give it a b
 
 ## Visualization and demo
 
-* For visualization purposes see __2d_py.py__ script. It uses **PyQt5** for a simple GUI interactible and **pyopengl** for visualization. The script accepts 3 command line arguments. For example, `python3 2d_py.py 100 8 4` meaning: 100 time iterations are going to be visualized, mesh was generated using 8 OpenMP threads and the numerical solution was performed by 4 MPI processes.
+* For visualization purposes see __2d_py.py__ script. It uses **PyQt5** for a simple GUI interactable and **pyopengl** for visualization. The script accepts 3 command line arguments. For example, `python3 2d_py.py 100 8 4` meaning: 100 time iterations are going to be visualized, mesh was generated using 8 OpenMP threads and the numerical solution was performed by 4 MPI processes.
 
 * Below is an example of the numerical solution.
 
